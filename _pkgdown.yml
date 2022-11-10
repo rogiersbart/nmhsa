@@ -1,0 +1,15 @@
+home:
+  title: The {nmhsa} R package
+  description: Nested multiresolution hierarchical simulated annealing
+url: https://rogiersbart.github.io/nmhsa
+authors:
+  Bart Rogiers:
+    href: https://rogiersbart.github.io
+navbar:
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+  structure:
+    left:  [home, intro, articles, tutorials, reference, news]
+    right: []

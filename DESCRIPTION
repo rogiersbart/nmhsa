@@ -1,0 +1,52 @@
+Package: nmhsa
+Version: 0.0.0.9000
+Title: Nested multiresolution hierarchical simulated annealing
+Description: Porous media reconstruction using an advanced simulated annealing
+    approach.
+Authors@R: 
+    c(
+      person(
+        "Bart",
+        "Rogiers",
+        email = "rogiers.bart@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(
+          ORCID = "0000-0002-8836-0988",
+          url = "<https://rogiersbart.github.io>"
+        )
+      ),
+      person(
+        "Laurent",
+        "Lemmens",
+        email = "laurent.lemmens@outlook.de",
+        role = c("aut"),
+        comment = c(
+          "Author of the original Python code",
+          ORCID = "0000-0002-8836-0988"
+        )
+      )
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "scipy"),
+      list(package = "numpy")
+    )
+  )
+Imports: 
+    reticulate,
+    rui (>= 0.0.0.9000)
+SystemRequirements: Python (>= 3.0.0)
+Depends: 
+    R (>= 2.10)
+Remotes: 
+    rogiersbart/rui
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
