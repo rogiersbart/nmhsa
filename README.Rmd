@@ -16,8 +16,15 @@ knitr::opts_chunk$set(
 # The {nmhsa} R package<img src="man/figures/logo.png" align="right" width="25%"/><br><small><font color="#999">Nested multiresolution hierarchical simulated annealing</font></small>
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/nmhsa.svg)](https://CRAN.R-project.org/package=nmhsa)
+```{r}
+#| results = "asis",
+#| echo = FALSE
+badger::badge_license()
+badger::badge_code_size("rogiersbart/nmhsa")
+badger::badge_custom("version", badger::ver_devel("nmhsa"), "blue", "https://github.com/rogiersbart/nmhsa")
+badger::badge_lifecycle("experimental")
+badger::badge_cran_release()
+```
 <!-- badges: end -->
 
 The {[nmhsa](https://rogiersbart.github.io/nmhsa)} R package provides an R
@@ -46,7 +53,7 @@ Hyperparameters and corresponding defaults have been thorougly revised, so we
 recommend you read the help pages of these functions in detail. For making use
 of the nesting available in `nmhsa()`, the training image has to be processed,
 and one or two modified versions of the image have to be provided as well.
-Here's a minimal example with the `cement` training image provided in the
+Here's a minimal `hsa()` example with the `cement` training image provided in the
 package:
 
 ```{r}
@@ -55,7 +62,7 @@ reconstruction <- hsa(cement)
 plot(cement, reconstruction)
 ```
 
-For more information, refer to the "Getting started" article.
+For more information, refer to `vignette("nmhsa")`.
 
 # Note
 

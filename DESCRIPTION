@@ -30,7 +30,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2
 Config/reticulate:
   list(
     packages = list(
@@ -50,3 +50,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://rogiersbart.github.io/nmhsa
+BugReports: https://github.com/rogiersbart/nmhsa/issues

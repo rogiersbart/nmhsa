@@ -47,7 +47,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
       <h1 data-toc-skip>Changelog <small></small></h1>
-      
+      <small>Source: <a href="https://github.com/rogiersbart/nmhsa/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
     <div class="section level2">
@@ -61,10 +61,13 @@
 </ul></li>
 <li>Bug fixes in the Python code
 <ul><li>
-<code>sg</code> is used in an instance of <code>sgini0</code> where it was not availalbe</li>
+<code>ordernew</code> is used for the final phase label in the 3D case instead of <code>order</code>, to relabel correctly afterwards from <code>ordernew</code> to <code>order</code>
+</li>
 <li>
-<code>annstep3d()</code> is used consistently instead of <code>annstep()</code> in the 3D case</li>
-<li>The first, simpler, 3D example from the wrapper is removed as it was overwritten by the second example anyway</li>
+<code>sg</code> is used in an instance of <code>sgini0</code> where it was not available.</li>
+<li>
+<code>annstep3d()</code> is used consistently instead of <code>annstep()</code> in the 3D case.</li>
+<li>The first, simpler, 3D example from the wrapper is removed as it was overwritten by the second example anyway.</li>
 <li>Deprecated <code>np.int()</code> was replaced by <code>int()</code>.</li>
 </ul></li>
 <li>Added a <code>NEWS.md</code> file to track changes to the package.</li>

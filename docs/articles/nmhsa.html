@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Getting started • nmhsa</title>
+<title>Get started with {nmhsa} • nmhsa</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Getting started">
+<meta property="og:title" content="Get started with {nmhsa}">
 <meta property="og:description" content="nmhsa">
 <meta property="og:image" content="https://rogiersbart.github.io/nmhsa/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -76,10 +76,10 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Getting started</h1>
+      <h1 data-toc-skip>Get started with {nmhsa}</h1>
             
       
-      
+      <small class="dont-index">Source: <a href="https://github.com/rogiersbart/nmhsa/blob/HEAD/vignettes/nmhsa.Rmd" class="external-link"><code>vignettes/nmhsa.Rmd</code></a></small>
       <div class="hidden name"><code>nmhsa.Rmd</code></div>
 
     </div>
@@ -88,9 +88,9 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">nmhsa</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #FF5555;">!</span> {<span style="color: #0000BB;">nmhsa</span>} is still in its experimental lifecycle stage.</span></span>
+<span><span class="co">#&gt; <span style="color: #FF5555;">!</span> {<span style="color: #BBBB00;">nmhsa</span>} is still in its experimental lifecycle stage.</span></span>
 <span><span class="co">#&gt; <span style="color: #FF5555;">!</span> Use at your own risk, and submit issues here:</span></span>
-<span><span class="co">#&gt; <span style="color: #FF5555;">!</span> <span style="color: #0000BB; font-style: italic;">&lt;</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #FF5555;">!</span> &lt;<span style="color: #00BBBB;">https://github.com/rogiersbart/nmhsa/issues</span>&gt;</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="the-example-microstructure">The example microstructure<a class="anchor" aria-label="anchor" href="#the-example-microstructure"></a>
 </h2>
@@ -154,6 +154,7 @@ phase 2:</p>
 <code class="sourceCode R"><span><span class="va">cement_merged</span> <span class="op">&lt;-</span> <span class="va">cement</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/phase_merge.html">phase_merge</a></span><span class="op">(</span><span class="fl">3</span>, into <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #FF5555;">!</span> Only merging touching pixels of phase 3 into 2</span></span>
+<span><span class="co">#&gt; <span style="color: #00BB00;">v</span> Preparing the Python backend ... done</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">cement</span>, <span class="va">cement_merged</span><span class="op">)</span></span></code></pre></div>
 <p><img src="nmhsa_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
 <p>Then we continue processing the image, and split off a series of

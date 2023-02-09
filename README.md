@@ -5,10 +5,16 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/nmhsa.svg)](https://CRAN.R-project.org/package=nmhsa)
+\[1\] “[![License:
+MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)”
+\[1\]
+“[![](https://img.shields.io/github/languages/code-size/rogiersbart/nmhsa.svg)](https://github.com/rogiersbart/nmhsa)”
+\[1\]
+“[![](https://img.shields.io/badge/version-0.0.0.9000-blue.svg)](https://github.com/rogiersbart/nmhsa)”
+\[1\]
+“[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)”
+\[1\]
+“[![](https://www.r-pkg.org/badges/version/nmhsa)](https://cran.r-project.org/package=nmhsa)”
 <!-- badges: end -->
 
 The {[nmhsa](https://rogiersbart.github.io/nmhsa)} R package provides an
@@ -39,23 +45,23 @@ been thorougly revised, so we recommend you read the help pages of these
 functions in detail. For making use of the nesting available in
 `nmhsa()`, the training image has to be processed, and one or two
 modified versions of the image have to be provided as well. Here’s a
-minimal example with the `cement` training image provided in the
+minimal `hsa()` example with the `cement` training image provided in the
 package:
 
 ``` r
 library(nmhsa)
 #> ! {nmhsa} is still in its experimental lifecycle stage.
 #> ! Use at your own risk, and submit issues here:
-#> ! <]8;;https://github.com/rogiersbart/nmhsa/issueshttps://github.com/rogiersbart/nmhsa/issues]8;;>
+#> ! <https://github.com/rogiersbart/nmhsa/issues>
 reconstruction <- hsa(cement)
 #> v Preparing the Python backend ... done
 #> v Reconstructing ... done
 plot(cement, reconstruction)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
-For more information, refer to the “Getting started” article.
+For more information, refer to `vignette("nmhsa")`.
 
 # Note
 

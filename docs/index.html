@@ -95,18 +95,18 @@
 <div class="section level1">
 <h1 id="use">Use<a class="anchor" aria-label="anchor" href="#use"></a>
 </h1>
-<p>To run the algorithms from the examples in the original Python code, you at least need a 2D array as training image, and resort to the <code><a href="reference/hsa.html">hsa()</a></code>, <code><a href="reference/mhsa.html">mhsa()</a></code> or <code><a href="reference/nmhsa.html">nmhsa()</a></code> functions, through which the algorithms are exposed to the R user. Hyperparameters and corresponding defaults have been thorougly revised, so we recommend you read the help pages of these functions in detail. For making use of the nesting available in <code><a href="reference/nmhsa.html">nmhsa()</a></code>, the training image has to be processed, and one or two modified versions of the image have to be provided as well. Here’s a minimal example with the <code>cement</code> training image provided in the package:</p>
+<p>To run the algorithms from the examples in the original Python code, you at least need a 2D array as training image, and resort to the <code><a href="reference/hsa.html">hsa()</a></code>, <code><a href="reference/mhsa.html">mhsa()</a></code> or <code><a href="reference/nmhsa.html">nmhsa()</a></code> functions, through which the algorithms are exposed to the R user. Hyperparameters and corresponding defaults have been thorougly revised, so we recommend you read the help pages of these functions in detail. For making use of the nesting available in <code><a href="reference/nmhsa.html">nmhsa()</a></code>, the training image has to be processed, and one or two modified versions of the image have to be provided as well. Here’s a minimal <code><a href="reference/hsa.html">hsa()</a></code> example with the <code>cement</code> training image provided in the package:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">nmhsa</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ! {nmhsa} is still in its experimental lifecycle stage.</span></span>
 <span><span class="co">#&gt; ! Use at your own risk, and submit issues here:</span></span>
-<span><span class="co">#&gt; ! &lt;]8;;https://github.com/rogiersbart/nmhsa/issueshttps://github.com/rogiersbart/nmhsa/issues]8;;&gt;</span></span>
+<span><span class="co">#&gt; ! &lt;https://github.com/rogiersbart/nmhsa/issues&gt;</span></span>
 <span><span class="va">reconstruction</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/hsa.html">hsa</a></span><span class="op">(</span><span class="va">cement</span><span class="op">)</span></span>
 <span><span class="co">#&gt; v Preparing the Python backend ... done</span></span>
 <span><span class="co">#&gt; v Reconstructing ... done</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">cement</span>, <span class="va">reconstruction</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
-<p>For more information, refer to the “Getting started” article.</p>
+<p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="100%"></p>
+<p>For more information, refer to <code><a href="articles/nmhsa.html">vignette("nmhsa")</a></code>.</p>
 </div>
 <div class="section level1">
 <h1 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a>
@@ -117,7 +117,15 @@
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="license">
+    <div class="links">
+<h2 data-toc-skip>Links</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/rogiersbart/nmhsa/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/rogiersbart/nmhsa/issues" class="external-link">Report a bug</a></li>
+</ul>
+</div>
+
+<div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
@@ -146,8 +154,11 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://CRAN.R-project.org/package=nmhsa" class="external-link"><img src="https://www.r-pkg.org/badges/version/nmhsa.svg" alt="CRAN status"></a></li>
+<li><a href="https://cran.r-project.org/web/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></li>
+<li><a href="https://github.com/rogiersbart/nmhsa" class="external-link"><img src="https://img.shields.io/github/languages/code-size/rogiersbart/nmhsa.svg"></a></li>
+<li><a href="https://github.com/rogiersbart/nmhsa" class="external-link"><img src="https://img.shields.io/badge/version-0.0.0.9000-blue.svg"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"></a></li>
+<li><a href="https://cran.r-project.org/package=nmhsa" class="external-link"><img src="https://www.r-pkg.org/badges/version/nmhsa"></a></li>
 </ul>
 </div>
 
