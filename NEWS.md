@@ -10,9 +10,11 @@
     * New {rui} Python function calls replace original Python messages
     * Code is reformatted for improved readability
 * Bug fixes in the Python code
-    * `sg` is used in an instance of `sgini0` where it was not availalbe
-    * `annstep3d()` is used consistently instead of `annstep()` in the 3D case
+    * `ordernew` is used for the final phase label in the 3D case instead of
+      `order`, to relabel correctly afterwards from `ordernew` to `order`
+    * `sg` is used in an instance of `sgini0` where it was not available.
+    * `annstep3d()` is used consistently instead of `annstep()` in the 3D case.
     * The first, simpler, 3D example from the wrapper is removed as it was
-      overwritten by the second example anyway
+      overwritten by the second example anyway.
     * Deprecated `np.int()` was replaced by `int()`.
 * Added a `NEWS.md` file to track changes to the package.

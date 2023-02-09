@@ -575,8 +575,11 @@ def NMH_SA2Dto3D(
         gridlevel[0],
         target,
     )
-
     tid = np.shape(tiini)
+
+    # rui.inform("simout unique", np.unique(simout))
+    # rui.inform("ordernew", ordernew)
+    
     for i in range(1, len(ordernew) - 1):
 
         importantpoints = np.copy(pointsdetermined)
@@ -650,12 +653,13 @@ def NMH_SA2Dto3D(
             simout,
             np.append(pointsdetermined, 0),
         )
+        # rui.inform("simout unique", np.unique(simout))
     if type(simout) == tuple:
         sg0 = simout[0]
-        sg0[sg0 == 0] = order[-1]
+        sg0[sg0 == 0] = ordernew[-1]
     else:
         sg0 = simout
-        sg0[sg0 == 0] = order[-1]
+        sg0[sg0 == 0] = ordernew[-1]
     if merging != 1:
         if split != 1:
             sg0 = imrelable(sg0, ordernew, order)
